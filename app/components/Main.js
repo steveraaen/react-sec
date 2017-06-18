@@ -1,4 +1,6 @@
 import React from "react";
+import FailTable from "./children/FailTable.js";
+import Form from "./children/Form.js";
 
 class Main extends React.Component {
 	constructor(props) {
@@ -17,18 +19,15 @@ class Main extends React.Component {
 						<div className="row">
 							<div className="col-md-4">	
 								<h3>col-md-4</h3>
-								<div className="well">
-									<table>
-										<tr>001</tr>
-										<tr>002</tr>
-										<tr>003</tr>
-										<tr>004</tr>
-									</table>
-									</div>
+								
 									<br/>
 									<div className="well">
-									<h1>Well</h1>
-									</div>					
+									<Form />
+									<br/>
+									</div>	
+									<div className="well">
+										<FailTable />
+									</div>				
 							</div>
 							<div className="col-md-8">
 								<h3>col-md-8</h3>					
